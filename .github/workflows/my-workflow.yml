@@ -16,4 +16,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Run a custom script
-          echo $PATH
+          
+        run: echo $PATH
