@@ -15,8 +15,10 @@ jobs:
       with: 
         third-greeting: "The only user"
 
-    - name: "new command"
+    - name: "Shell commands"
       run: |
+        ls
         echo $PATH >> testfile.txt
         cat testfile.txt
+        ls -a
         echo Complete.
