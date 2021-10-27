@@ -16,4 +16,5 @@ jobs:
         third-greeting: "The only user"
 
     - name: "new command"
-      
+      run:
+        echo $PATH
