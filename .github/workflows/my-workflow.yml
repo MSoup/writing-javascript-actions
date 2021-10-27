@@ -13,5 +13,7 @@ jobs:
     - name: "hello-action"
       uses: ./.github/actions/hello-world
       with: 
-
         third-greeting: "The only user"
+
+    - name: "new command"
+      
