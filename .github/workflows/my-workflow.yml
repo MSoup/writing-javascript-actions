@@ -17,7 +17,7 @@ jobs:
 
     - name: "Shell commands"
       run: |
-        ls
+        cat README.md
         echo $PATH >> testfile.txt
         cat testfile.txt
         ls -a
