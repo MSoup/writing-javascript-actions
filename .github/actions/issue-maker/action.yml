@@ -3,13 +3,15 @@ name: "I have issues"
 description: "consume the output of the previous action and create a new issue"
 
 inputs:
+  # Input 1
   joke:
     description: "This will become the body of the created issue"
-
+  # Input 2
   issue-title: 
     description: "Every issue needs a title, it's nice to supply one even if I can do it dynamically with code"
     default: "a joke for you"
     required: true
+  # Input 3
   repo-token:
     description: "Token with permissions to do repo things"
 

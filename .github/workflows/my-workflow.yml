@@ -23,11 +23,12 @@ jobs:
         ls -a
         echo Complete.
 
-    # Example action using API data and pulling from external API
+    # Example action getting data from external API
     - name: "ha-ha"
       uses: ./.github/actions/joke-action/
       id: jokes
 
+    # Example action, create issue with github access token and output from action 2
     - name: "create-issue"
       uses: ./.github/actions/issue-maker
       with:

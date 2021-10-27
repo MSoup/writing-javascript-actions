@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '@vercel/ncc'
+1 verbose cli ]
+2 info using npm@6.14.14
+3 info using node@v14.17.5
+4 verbose npm-session 8086f441a9aac032
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/@vercel%2fncc 1446ms
+8 http fetch GET 200 https://registry.npmjs.org/@vercel/ncc/-/ncc-0.31.1.tgz 788ms
+9 silly pacote tag manifest for @vercel/ncc@latest fetched in 2256ms
+10 timing stage:loadCurrentTree Completed in 2271ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 1ms
+16 silly install loadAllDepsIntoIdealTree
+17 silly resolveWithNewModule @vercel/ncc@0.31.1 checking installable status
+18 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 2ms
+19 timing stage:loadIdealTree Completed in 3ms
+20 silly currentTree npm
+21 silly idealTree npm
+21 silly idealTree `-- @vercel/ncc@0.31.1
+22 silly install generateActionsToTake
+23 timing stage:generateActionsToTake Completed in 3ms
+24 silly diffTrees action count 1
+25 silly diffTrees add @vercel/ncc@0.31.1
+26 silly decomposeActions action count 8
+27 silly decomposeActions fetch @vercel/ncc@0.31.1
+28 silly decomposeActions extract @vercel/ncc@0.31.1
+29 silly decomposeActions preinstall @vercel/ncc@0.31.1
+30 silly decomposeActions build @vercel/ncc@0.31.1
+31 silly decomposeActions install @vercel/ncc@0.31.1
+32 silly decomposeActions postinstall @vercel/ncc@0.31.1
+33 silly decomposeActions finalize @vercel/ncc@0.31.1
+34 silly decomposeActions refresh-package-json @vercel/ncc@0.31.1
+35 silly install executeActions
+36 silly doSerial global-install 8
+37 verbose correctMkdir C:\projectdir\writing-javascript-actions\.github\projectdir_installsnpm-cache\_locks correctMkdir not in flight; initializing
+38 verbose makeCacheDir UID & GID are irrelevant on win32
+39 verbose lock using C:\projectdir\writing-javascript-actions\.github\projectdir_installsnpm-cache\_locks\staging-165fc5f79d5302ce.lock for C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\.staging
+40 silly doParallel extract 1
+41 silly extract @vercel/ncc@0.31.1
+42 silly tarball trying @vercel/ncc@latest by hash: sha512-g0FAxwdViI6UzsiVz5HssIHqjcPa1EHL6h+2dcJD893SoCJaGdqqgUF09xnMW6goWnnhbLvgiKlgJWrJa+7qYA==
+43 silly extract @vercel/ncc@latest extracted to C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\.staging\@vercel\ncc-2282ff8c (112ms)
+44 timing action:extract Completed in 113ms
+45 silly doReverseSerial unbuild 8
+46 silly doSerial remove 8
+47 silly doSerial move 8
+48 silly doSerial finalize 8
+49 silly finalize C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\@vercel\ncc
+50 timing action:finalize Completed in 3ms
+51 silly doParallel refresh-package-json 1
+52 silly refresh-package-json C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\@vercel\ncc
+53 timing action:refresh-package-json Completed in 11ms
+54 silly doParallel preinstall 1
+55 silly preinstall @vercel/ncc@0.31.1
+56 info lifecycle @vercel/ncc@0.31.1~preinstall: @vercel/ncc@0.31.1
+57 timing action:preinstall Completed in 0ms
+58 silly doSerial build 8
+59 silly build @vercel/ncc@0.31.1
+60 info linkStuff @vercel/ncc@0.31.1
+61 silly linkStuff @vercel/ncc@0.31.1 has C:\Users\Daven Lu\AppData\Roaming\npm\node_modules as its parent node_modules
+62 silly linkStuff @vercel/ncc@0.31.1 is part of a global install
+63 silly linkStuff @vercel/ncc@0.31.1 is installed into a global node_modules
+64 silly linkStuff @vercel/ncc@0.31.1 is installed into the top-level global node_modules
+65 verbose linkBins [
+65 verbose linkBins   { ncc: 'dist/ncc/cli.js' },
+65 verbose linkBins   'C:\\Users\\Daven Lu\\AppData\\Roaming\\npm',
+65 verbose linkBins   true
+65 verbose linkBins ]
+66 timing action:build Completed in 3ms
+67 verbose unlock done using C:\projectdir\writing-javascript-actions\.github\projectdir_installsnpm-cache\_locks\staging-165fc5f79d5302ce.lock for C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\.staging
+68 timing stage:rollbackFailedOptional Completed in 23ms
+69 timing stage:runTopLevelLifecycles Completed in 2438ms
+70 verbose stack Error: EEXIST: file already exists, cmd shim 'C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\@vercel\ncc\dist\ncc\cli.js' -> 'C:\Users\Daven Lu\AppData\Roaming\npm\ncc'
+70 verbose stack     at simulateEEXIST (C:\Program Files\nodejs\node_modules\npm\node_modules\gentle-fs\lib\bin-link.js:87:15)
+70 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\gentle-fs\lib\bin-link.js:78:17
+70 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-cmd-shim\index.js:51:29
+70 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:123:16
+70 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)
+71 verbose cwd C:\projectdir\writing-javascript-actions\.github
+72 verbose Windows_NT 10.0.19042
+73 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "@vercel/ncc"
+74 verbose node v14.17.5
+75 verbose npm  v6.14.14
+76 error code EEXIST
+77 error path C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\@vercel\ncc\dist\ncc\cli.js
+78 error dest C:\Users\Daven Lu\AppData\Roaming\npm\ncc
+79 error EEXIST: file already exists, cmd shim 'C:\Users\Daven Lu\AppData\Roaming\npm\node_modules\@vercel\ncc\dist\ncc\cli.js' -> 'C:\Users\Daven Lu\AppData\Roaming\npm\ncc'
+80 error File exists: C:\Users\Daven Lu\AppData\Roaming\npm\ncc
+81 error Remove the existing file and try again, or run npm
+82 error with --force to overwrite files recklessly.
+83 verbose exit [ 1, true ]
