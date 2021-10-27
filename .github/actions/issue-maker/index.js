@@ -15,7 +15,7 @@ async function run() {
             repo: "hello-world",
             title: issueTitle,
             body: jokeBody,
-        })
+        });
     } catch(err) {
         core.setFailed(err.message);
     }
