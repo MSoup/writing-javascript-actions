@@ -1,7 +1,7 @@
-# This is my workflow file
-
 name: JS Actions
-on: [push]
+on:
+  pull_request:
+    types: [labeled]
 
 jobs:
   action:
@@ -10,11 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    # Example JS Greeting Action
     - name: "hello-action"
       uses: ./.github/actions/hello-world
-      with: 
-        third-greeting: "The only user"
 
+    # Example action using shell commands
     - name: "Shell commands"
       run: |
         cat README.md
@@ -22,3 +22,8 @@ jobs:
         cat testfile.txt
         ls -a
         echo Complete.
+
+    # Example action using API data and pulling from external API
+    - name: "ha-ha"
+      uses: ./.github/actions/joke-action/
+      
