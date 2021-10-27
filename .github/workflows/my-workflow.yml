@@ -16,7 +16,7 @@ jobs:
         third-greeting: "The only user"
 
     - name: "new command"
-      run:
+      run: |
         echo $PATH >> testfile.txt
         cat testfile.txt
         echo Complete.
