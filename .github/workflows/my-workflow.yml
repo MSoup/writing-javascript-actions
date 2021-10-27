@@ -17,4 +17,6 @@ jobs:
 
     - name: "new command"
       run:
-        echo $PATH
+        echo $PATH >> testfile.txt
+        cat testfile.txt
+        echo Complete.
