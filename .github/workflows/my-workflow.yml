@@ -11,17 +11,17 @@ jobs:
     - uses: actions/checkout@v1
 
     # Example JS Greeting Action
-    # - name: "hello-action"
-    #   uses: ./.github/actions/hello-world
+    - name: "hello-action"
+      uses: ./.github/actions/hello-world
 
     # Example action using shell commands
-    # - name: "Shell commands"
-    #   run: |
-    #     cat README.md
-    #     echo $PATH >> testfile.txt
-    #     cat testfile.txt
-    #     ls -a
-    #     echo Complete.
+    - name: "Shell commands"
+      run: |
+        cat README.md
+        echo $PATH >> testfile.txt
+        cat testfile.txt
+        ls -a
+        echo Complete.
 
     # Example action using API data and pulling from external API
     - name: "ha-ha"
